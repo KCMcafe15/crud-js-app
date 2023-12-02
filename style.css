@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("body-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-table{
+    width: 80%;
+    margin: 40px auto;
+    background: linear-gradient(rgb(99, 124, 213),rgb(228, 165, 218), rgb(99, 124, 213));
+}
+
+.prod-form{
+    margin: 0 15px;
+}
+
+.prod-form-div{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    margin: 15px 20px;
+}
+
+table.list{
+    text-align: center;
+    width: 100%;
+}
+
+td{
+    border: 1px solid rgb(204, 200, 200);
+    text-align: left;
+    padding: 8px 15px;
+}
+
+tr:nth-child(even), table.list thead > tr{
+    background-color: rgb(204, 200, 200);
+}
+
+input[type="text"],input[type="number"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(165, 161, 161);
+    border-radius: 4px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #eeeeee;
+    padding: 12px 40px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    background: linear-gradient(rgb(228, 165, 218),  rgb(161, 190, 206));
+    border: 1px solid #5b5b5b;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 11px 39px;
+}
+
+input[type="reset"]:hover {
+    background: linear-gradient(rgb(228, 165, 218), rgb(161, 190, 206));
+    border: 1px solid #5b5b5b;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 11px 39px;
+}
+
+.form-action-button{
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
